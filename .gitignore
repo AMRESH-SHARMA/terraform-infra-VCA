@@ -1,3 +1,7 @@
 **/.terraform
 **/.terraform.lock.hcl
 **/env.auto.tfvars
+
+frontendkey
+databasekey
+backendkey

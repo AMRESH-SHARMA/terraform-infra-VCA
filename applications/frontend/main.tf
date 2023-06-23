@@ -7,8 +7,8 @@ provider "aws" {
 module "security_group" {
   source = "../../modules/aws_sg"
   # Inject sg group env variables to aws_ec2 module
-  security_group_name          = "mysql_sg"
-  security_group_description   = "security group for MySQL ec2 instance"
+  security_group_name          = "frontend_sg"
+  security_group_description   = "security group for frontend ec2 instance"
   security_group_ingress_ports = var.security_group_ingress_ports
 }
 
@@ -24,7 +24,7 @@ module "ec2_key_pair" {
 
 module "ec2" {
   source = "../../modules/aws_ec2"
-  # Inject ec2 variables to mysql_ec2 module
+  # Inject ec2 variables to frontend_ec2 module
   ec2_ami           = var.ec2_ami
   ec2_instance_type = var.ec2_instance_type
   ec2_tag_name      = var.ec2_tag_name

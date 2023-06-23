@@ -7,6 +7,7 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Workspace Configuration (Terraform Cloud)](#configuration)
+- [Command Used](#command-Used)
 - [Modules Used](#modules-used)
 - [ Authors](#authors)
 
@@ -72,6 +73,14 @@ This project utilizes the following custom modules:
 
 -   `aws_ec2`: Manages the provisioning and configuration of AWS EC2 instances to host frontend, backend, and database applications.
 -   `aws_sg`: Configures security groups to enforce granular network traffic rules, ensuring robust security and controlled
+
+## Command Used
+```
+terraform init
+terraform plan
+terraform apply-auto-approve
+terraform destroy
+```
 
 ## Author
 [Amresh Sharma](https://github.com/AMRESH-SHARMA)
