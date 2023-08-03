@@ -35,12 +35,16 @@ module "ec2" {
 }
 
 # Generate EIP
+/*
 resource "aws_eip" "ec2_eip" {
   domain   = "vpc"               
 }
+*/
 
 # Associate EIP with EC2 Instance
+/*
 resource "aws_eip_association" "ec2_eip_association" {
   instance_id   = module.ec2.instance_id
   allocation_id = aws_eip.ec2_eip.id
 }
+*/
