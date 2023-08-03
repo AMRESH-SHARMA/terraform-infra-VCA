@@ -5,3 +5,8 @@
 frontendkey
 databasekey
 backendkey
+prometheuskey
+
+frontendkey.pem
+instance.ppk
+
